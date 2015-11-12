@@ -1,0 +1,42 @@
+package com.javarush.test.level02.lesson05.task03;
+
+Создайте объект типа Cat(кот), объект типа Dog (собака), объект типа Fish (рыбка) и объект типа Woman.
+Присвойте каждому животному владельца (owner).
+
+
+public class Solution
+{
+    public static void main(String[] args)
+    {
+        Woman woman1 = new Woman();
+        
+        Cat cat1 = new Cat();
+        cat1.owner = woman1;
+        
+        Dog dog1 = new Dog();
+        dog1.owner = woman1;
+        
+        Fish fish1 = new Fish();
+        fish1.owner = woman1;
+        
+    }
+
+    public static class Cat
+    {
+        public Woman owner;
+    }
+
+    public static class Dog
+    {
+        public Woman owner;
+    }
+
+    public static class Fish
+    {
+        public Woman owner;
+    }
+
+    public static class Woman
+    {
+    }
+}
