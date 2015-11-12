@@ -1,0 +1,13 @@
+
+public class Sobaki
+{
+ public static void main (String[] args)
+  {
+	Dog dogbella = new Dog();
+        bella.name = "Bella";
+  }
+ 
+ public static class Dog
+  {
+   public String name;
+  }
